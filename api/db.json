@@ -7,8 +7,8 @@
       "id": "8e67bd9e-69b5-47ff-a25b-74c9124fd99d"
     },
     {
-      "title": "new categ2",
-      "description": "new description2",
+      "title": "New categ2",
+      "description": "New description2",
       "id": "c5e01f45-ebce-4bf4-b723-d93b3b5070c1"
     },
     {
@@ -17,5 +17,21 @@
       "id": "c52de609-fa32-40ef-88ba-e62f0148384b"
     }
   ],
-  "places": []
+  "places": [
+    {
+      "title": "new place",
+      "description": "new description",
+      "id": "8ac9affd-18f3-47a3-8a8c-087201c61597"
+    },
+    {
+      "title": "New place3",
+      "description": "New description3",
+      "id": "63f5cb3e-5cbb-4297-a0db-a6f82c62d018"
+    },
+    {
+      "title": "new place3",
+      "description": "new description3",
+      "id": "66257c71-d571-4b5a-90bf-0f54ca3ae1f0"
+    }
+  ]
 }
