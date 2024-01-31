@@ -1,0 +1,21 @@
+{
+  "items": [],
+  "categories": [
+    {
+      "title": "new categ",
+      "description": "new description",
+      "id": "8e67bd9e-69b5-47ff-a25b-74c9124fd99d"
+    },
+    {
+      "title": "new categ2",
+      "description": "new description2",
+      "id": "c5e01f45-ebce-4bf4-b723-d93b3b5070c1"
+    },
+    {
+      "title": "new categ3",
+      "description": "new description3",
+      "id": "c52de609-fa32-40ef-88ba-e62f0148384b"
+    }
+  ],
+  "places": []
+}
