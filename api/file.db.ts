@@ -29,7 +29,6 @@ const fileDb = {
   },
 
   async getItemsById(key: 'items', id: string) {
-
     const placeId = data[key].find(item => item.placeId === id);
     const categoryId = data[key].find(item => item.categoryId === id);
 
@@ -43,7 +42,6 @@ const fileDb = {
       return data[key];
     }
 
-
     if (key === 'items') {
       return data[key].map(item => ({
         id: item.id,
@@ -52,7 +50,6 @@ const fileDb = {
         placeId: item.placeId,
       }));
     }
-
 
     if (!id) {
       return data[key].map(item => ({
@@ -81,8 +78,9 @@ const fileDb = {
     const place = data.places.find(value => value.id === item.placeId);
 
     if (!category || !place) {
-      return 'такой айди не существует';
+      return 'id Not Found';
     }
+
     const newItem = {
       ...item,
       id: randomUUID(),
@@ -95,9 +93,6 @@ const fileDb = {
   },
 
   async deleteItem(key: keyof typeof data, id: string) {
-    if (key === 'items') {
-      return 'Cannot be deleted';
-    }
 
     const item = data[key].find(item => item.id === id);
 
@@ -108,11 +103,18 @@ const fileDb = {
         return 'Cannot be deleted';
       }
     }
-    const index = data[key].findIndex(item => item.id === id);
-    data[key].splice(index, 1);
-    await this.save();
-    return 'deleted';
 
+
+    const index = data[key].findIndex(item => item.id === id);
+
+    if (index !== -1) {
+
+      data[key].splice(index, 1);
+      await this.save();
+      return 'successfully deleted';
+    }
+
+    return false;
   },
 
   async editItem(item: ICategories | IPlaces, key: 'categories' | 'places', id: string) {
