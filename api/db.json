@@ -1,1 +1,20 @@
-{"items":[{"placeId":"63f5cb3e-5cbb-4297-a0db-a6f82c62d018","categoryId":"c5e01f45-ebce-4bf4-b723-d93b3b5070c1","image":"images/0e90482b-b1c1-4252-9abc-53fb6341896a.png","title":"items","description":"items ","id":"3fa21f11-7e7c-4ee6-9f33-d52cc2ce6700"}],"categories":[],"places":[{"title":"New place3","description":"New description3","id":"63f5cb3e-5cbb-4297-a0db-a6f82c62d018"}]}
+{
+  "items": [
+    {
+      "placeId": "63f5cb3e-5cbb-4297-a0db-a6f82c62d018",
+      "categoryId": "c5e01f45-ebce-4bf4-b723-d93b3b5070c1",
+      "image": "images/0e90482b-b1c1-4252-9abc-53fb6341896a.png",
+      "title": "items",
+      "description": "items ",
+      "id": "3fa21f11-7e7c-4ee6-9f33-d52cc2ce6700"
+    }
+  ],
+  "categories": [],
+  "places": [
+    {
+      "title": "New place3",
+      "description": "New description3",
+      "id": "63f5cb3e-5cbb-4297-a0db-a6f82c62d018"
+    }
+  ]
+}
